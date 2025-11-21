@@ -1,0 +1,24 @@
+<svg width="360" height="360" viewBox="0 0 360 360" xmlns="http://www.w3.org/2000/svg">
+  <rect width="360" height="360" fill="#EFE8E0"/>
+  <g fill="none" stroke="#CFA66A" stroke-width="4" stroke-linecap="round">
+    <path d="M0 60h360" opacity="0.6"/>
+    <path d="M0 120h360" opacity="0.6"/>
+    <path d="M0 180h360" opacity="0.6"/>
+    <path d="M0 240h360" opacity="0.6"/>
+    <path d="M0 300h360" opacity="0.6"/>
+  </g>
+  <g fill="#8C2F2F">
+    <path d="M180 30l16 28h-32z" />
+    <path d="M180 90l16 28h-32z" opacity="0.9" />
+    <path d="M180 150l16 28h-32z" opacity="0.85" />
+    <path d="M180 210l16 28h-32z" opacity="0.8" />
+    <path d="M180 270l16 28h-32z" opacity="0.75" />
+    <path d="M180 330l16 28h-32z" opacity="0.7" />
+  </g>
+  <g stroke="#4B2E22" stroke-width="3" stroke-linecap="round">
+    <path d="M60 0v360" opacity="0.6"/>
+    <path d="M120 0v360" opacity="0.6"/>
+    <path d="M240 0v360" opacity="0.6"/>
+    <path d="M300 0v360" opacity="0.6"/>
+  </g>
+</svg>

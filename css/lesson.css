@@ -1,0 +1,59 @@
+.lesson-layout {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 22px;
+}
+
+.lesson-hero {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.lesson-hero .ethno-circle {
+  flex-shrink: 0;
+}
+
+.lesson-steps {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 14px;
+}
+
+.lesson-steps li {
+  display: grid;
+  grid-template-columns: 36px 1fr;
+  gap: 12px;
+  align-items: center;
+  padding: 12px;
+  border-radius: 14px;
+  background: #fff;
+  border: 1px solid rgba(140, 47, 47, 0.12);
+  box-shadow: var(--shadow-soft);
+}
+
+.lesson-steps strong {
+  font-size: 1.05rem;
+  color: var(--kara-jylga);
+}
+
+.lesson-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.note-box {
+  background: rgba(75, 46, 34, 0.05);
+  border-radius: 12px;
+  padding: 14px;
+  border: 1px solid rgba(75, 46, 34, 0.12);
+}
+
+@media (max-width: 960px) {
+  .lesson-layout {
+    grid-template-columns: 1fr;
+  }
+}

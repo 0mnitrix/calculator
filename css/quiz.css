@@ -1,0 +1,50 @@
+.quiz-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.question-card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: var(--shadow-soft);
+  border: 1px solid rgba(140, 47, 47, 0.12);
+}
+
+.option-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.option-list label {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid rgba(75, 46, 34, 0.12);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.option-list input {
+  width: auto;
+}
+
+.option-list label:hover {
+  border-color: rgba(140, 47, 47, 0.4);
+  box-shadow: var(--shadow-soft);
+}
+
+.result-card {
+  background: linear-gradient(145deg, rgba(140, 47, 47, 0.12), rgba(207, 166, 106, 0.2));
+  padding: 18px;
+  border-radius: 16px;
+  border: 1px solid rgba(140, 47, 47, 0.2);
+}
