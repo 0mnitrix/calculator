@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ky">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heritago AI чат</title>
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/ai.css">
+</head>
+<body style="min-height:100vh; background:#0b0806; color:var(--text);">
+  <main class="card ai-pane" style="max-width:720px;margin:30px auto;">
+    <div class="section-title"><h2>Heritago AI</h2><span class="helper-text">Жазуу режими</span></div>
+    <div class="ai-transcript">Салам! Эмне жардам керек?</div>
+    <form class="content-grid" style="gap:10px;" data-ai-form>
+      <label>Сурооңуз<br><textarea name="prompt" placeholder="Тапшырманы жаз" required></textarea></label>
+      <button class="button" type="submit">Жөнөтүү</button>
+    </form>
+  </main>
+  <script type="module" src="../js/ai.js"></script>
+  <script type="module" src="./ai.js"></script>
+</body>
+</html>

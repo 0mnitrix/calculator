@@ -1,0 +1,7 @@
+[
+  { "title": "Beginner Quiz", "description": "Негизги сөздөр жана сүйлөмдөр", "cta": "Solve" },
+  { "title": "Culture Quiz", "description": "Салттар жана үрп-адаттар", "cta": "Solve" },
+  { "title": "Geography Quiz", "description": "Карта жана тоолор боюнча суроолор", "cta": "Solve" },
+  { "title": "Санжыра факты", "description": "Уруулардын тамырларын текшер", "cta": "Solve" },
+  { "title": "Аралаш тест", "description": "Аралаш темалардан жыйнак", "cta": "Solve" }
+]

@@ -1,0 +1,36 @@
+.rating-list {
+  display: grid;
+  gap: 10px;
+}
+
+.rating-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.rating-tabs {
+  display: inline-flex;
+  gap: 8px;
+  padding: 6px;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+.rating-tabs button {
+  border: none;
+  background: transparent;
+  color: var(--text);
+  padding: 8px 12px;
+  border-radius: 10px;
+}
+
+.rating-tabs button.active {
+  background: rgba(209, 106, 27, 0.2);
+  color: var(--accent-2);
+}
