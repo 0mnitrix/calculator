@@ -2,7 +2,7 @@ import { renderList, formatDuration } from './ui.js';
 
 async function loadCourses() {
   try {
-    const res = await fetch('./data/courses.json');
+    const res = await fetch('/api/courses/');
     const courses = await res.json();
     renderList('#course-list', courses, (course) => `
       <article class="card border-band">

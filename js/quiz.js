@@ -1,6 +1,6 @@
 async function loadQuiz() {
   try {
-    const res = await fetch('./data/quiz.json');
+    const res = await fetch('/api/quiz/');
     const { title, questions } = await res.json();
     const titleEl = document.querySelector('#quiz-title');
     if (titleEl) titleEl.textContent = title;

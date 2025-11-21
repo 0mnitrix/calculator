@@ -2,7 +2,7 @@ import { renderList } from './ui.js';
 
 async function loadLesson() {
   try {
-    const res = await fetch('./data/lessons.json');
+    const res = await fetch('/api/lessons/');
     const { title, summary, steps, vocab } = await res.json();
     const titleEl = document.querySelector('#lesson-title');
     const summaryEl = document.querySelector('#lesson-summary');

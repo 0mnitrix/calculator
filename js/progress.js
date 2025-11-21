@@ -1,22 +1,24 @@
 async function loadProgress() {
   try {
-    const res = await fetch('./data/courses.json');
-    const courses = await res.json();
+    const res = await fetch('/api/progress/');
+    const entries = await res.json();
     const table = document.querySelector('#progress-table tbody');
     if (!table) return;
-    table.innerHTML = courses
-      .map(
-        (course) => `
+    table.innerHTML = entries
+      .map((entry) => {
+        const course = entry.course || entry;
+        const progress = entry.percent || course.progress || '42%';
+        const lessons = entry.lessons_completed || course.lessons;
+        return `
         <tr>
           <td>${course.title}</td>
-          <td>${course.progress || '42%'}
-            <div class="progress" aria-hidden="true"><div class="bar" style="width:${course.progress || '42%'}"></div></div>
+          <td>${progress}
+            <div class="progress" aria-hidden="true"><div class="bar" style="width:${progress}"></div></div>
           </td>
-          <td>${course.lessons} уроков</td>
+          <td>${lessons} уроков</td>
           <td>${course.language}</td>
-        </tr>
-      `
-      )
+        </tr>`;
+      })
       .join('');
   } catch (e) {
     console.error('Не удалось загрузить прогресс', e);
