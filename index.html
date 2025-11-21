@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ky">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Heritago UX Blueprint Prototype</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo" role="img" aria-label="Heritago">HERITAGO</div>
+    <div class="top-actions">
+      <button class="ghost" aria-label="Search">
+        🔍 <span class="label">Поиск</span>
+      </button>
+      <button class="ghost" aria-label="Settings">
+        ⚙️ <span class="label">Настройки</span>
+      </button>
+      <button class="ghost" aria-label="Profile">
+        👤 <span class="label">Профиль</span>
+      </button>
+    </div>
+  </header>
+
+  <aside class="sidebar" aria-label="Sidebar navigation">
+    <nav>
+      <p class="nav-heading">Контент</p>
+      <ul>
+        <li><a href="#games">🕹 ОЮНДАР</a></li>
+        <li><a href="#quizzes">❓ КВИЗДЕР</a></li>
+        <li><a href="#cinema">🎬 КИНО</a></li>
+        <li><a href="#genealogy">🐺 САНЖЫРА</a></li>
+        <li><a href="#geo">🌍 ЖЕР-ТААНУУ</a></li>
+        <li><a href="#encyclopedia">📚 ЭНЦИКЛОПЕДИЯ</a></li>
+        <li><a href="#books">📖 КИТЕПТЕР</a></li>
+      </ul>
+      <p class="nav-heading">Социалдык</p>
+      <ul>
+        <li><button class="link" data-open="chat">💬 ГЛОБАЛ ЧАТ</button></li>
+        <li><button class="link" data-open="rating">⭐ РЕЙТИНГ</button></li>
+        <li><a href="#profile">👤 МЕН ПРОФИЛ</a></li>
+      </ul>
+      <p class="nav-heading">Системдик</p>
+      <ul>
+        <li><a href="#settings">⚙️ ОРНОТУУЛАР</a></li>
+        <li><a href="#language">🌐 ТИЛ ТАНДОО</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main class="content">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-text">
+        <h1 id="hero-title">Кыргыз маданиятын<br />жаңы муундагы форматта үйрөн.</h1>
+        <div class="hero-actions">
+          <button class="primary">Баштоо</button>
+          <button class="secondary">Курс тандоо</button>
+        </div>
+      </div>
+      <div class="hero-pattern" aria-hidden="true"></div>
+    </section>
+
+    <section class="featured" aria-labelledby="featured-title">
+      <div class="section-header">
+        <h2 id="featured-title">Тандалган</h2>
+      </div>
+      <div class="card-grid three">
+        <article class="card">
+          <p class="eyebrow">Курс</p>
+          <h3>Кыргыз тили A1</h3>
+          <p class="card-desc">Башталгычтар үчүн толук программа.</p>
+        </article>
+        <article class="card">
+          <p class="eyebrow">Квиз</p>
+          <h3>Популярдуу Квиз</h3>
+          <p class="card-desc">Көңүлдүү, тез текшерүү үчүн.</p>
+        </article>
+        <article class="card">
+          <p class="eyebrow">Видео</p>
+          <h3>Жаңы Видео</h3>
+          <p class="card-desc">Кыска этно-баяндар, 5 мүнөттөн.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="carousel" aria-labelledby="popular-title">
+      <div class="section-header">
+        <h2 id="popular-title">Популярдуу</h2>
+        <span class="hint">Горизонталдуу скролл</span>
+      </div>
+      <div class="scroll-row" role="list">
+        <div class="pill-card" role="listitem">Квиз: Санжыра факты</div>
+        <div class="pill-card" role="listitem">Видео: Кыска анимация</div>
+        <div class="pill-card" role="listitem">Оюн: Vocabulary Game</div>
+        <div class="pill-card" role="listitem">Энциклопедия: Маданият</div>
+        <div class="pill-card" role="listitem">Жер-Таануу: Ысык-Көл</div>
+      </div>
+    </section>
+
+    <section class="quote" aria-labelledby="quote-title">
+      <h2 id="quote-title" class="visually-hidden">Миссия</h2>
+      <blockquote>
+        <p>«Маданиятты билиш – тамырыбызды бекемдөө». </p>
+        <cite>— HERITAGO командасы</cite>
+      </blockquote>
+    </section>
+  </main>
+
+  <button class="fab" aria-label="Heritago AI" data-toggle="ai-menu">🤖</button>
+
+  <div class="ai-menu" hidden>
+    <button data-open="voice">🎤 СҮЙЛӨӨ</button>
+    <button data-open="ai-chat">✍️ ЖАЗУУ</button>
+  </div>
+
+  <section class="drawer" id="chat" aria-label="Heritago Global Chat" hidden>
+    <div class="drawer-header">
+      <h2>Heritago Global Chat</h2>
+      <button class="ghost" data-close="chat">✖</button>
+    </div>
+    <div class="drawer-body">
+      <ul class="topics">
+        <li>Тема 1</li>
+        <li>Тема 2</li>
+        <li>Тема 3</li>
+      </ul>
+      <div class="chat-area">
+        <div class="bubble">Салам! Жаңы тема ачуу үчүн жаз.</div>
+      </div>
+      <form class="chat-form">
+        <label class="visually-hidden" for="chat-input">Чат жазыңыз</label>
+        <input id="chat-input" type="text" placeholder="Жазыңыз..." />
+        <button type="submit" class="primary">Жөнөтүү</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="drawer" id="rating" aria-label="Heritago Rating" hidden>
+    <div class="drawer-header">
+      <h2>Heritago Rating</h2>
+      <button class="ghost" data-close="rating">✖</button>
+    </div>
+    <div class="drawer-body">
+      <div class="tabs">
+        <button class="chip active">Жума</button>
+        <button class="chip">Ай</button>
+        <button class="chip">Бардыгы</button>
+      </div>
+      <ol class="rating-list">
+        <li><strong>@user</strong> — 10200 XP</li>
+        <li><strong>@ai</strong> — 9200 XP</li>
+        <li><strong>@bek</strong> — 8800 XP</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="drawer" id="ai-chat" aria-label="Heritago AI" hidden>
+    <div class="drawer-header">
+      <h2>Heritago AI</h2>
+      <button class="ghost" data-close="ai-chat">✖</button>
+    </div>
+    <div class="drawer-body">
+      <div class="chat-area">
+        <div class="bubble">Салам! Эмне жардам керек?</div>
+      </div>
+      <form class="chat-form">
+        <label class="visually-hidden" for="ai-input">AIга жазуу</label>
+        <input id="ai-input" type="text" placeholder="Суроо жазыңыз..." />
+        <button type="submit" class="primary">Жөнөтүү</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="drawer" id="voice" aria-label="Heritago AI Voice" hidden>
+    <div class="drawer-header">
+      <h2>Heritago AI — Сүйлөө</h2>
+      <button class="ghost" data-close="voice">✖</button>
+    </div>
+    <div class="drawer-body">
+      <p>Микрофон интерфейси (маектешүү үчүн).</p>
+      <button class="primary">Баштоо</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
