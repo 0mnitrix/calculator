@@ -1,0 +1,19 @@
+.sidebar .logo {
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sidebar .logo img {
+  width: 28px;
+  height: 28px;
+}
+
+.sidebar hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 8px 0 4px;
+}

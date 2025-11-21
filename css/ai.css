@@ -1,0 +1,22 @@
+.ai-pane {
+  display: grid;
+  gap: 12px;
+}
+
+.ai-pane textarea {
+  min-height: 120px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--text);
+  padding: 12px;
+  font-family: var(--font-sans);
+}
+
+.ai-transcript {
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  padding: 12px;
+  line-height: 1.5;
+}

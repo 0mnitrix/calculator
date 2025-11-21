@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Heritago — Башкы бет</title>
+  <title>Heritago — Профиль</title>
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/sidebar.css">
   <link rel="stylesheet" href="css/topbar.css">
-  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/profile.css">
   <link rel="stylesheet" href="css/ai.css">
   <link rel="stylesheet" href="css/responsive.css">
 </head>
@@ -32,7 +32,7 @@
       <p class="sidebar-title">Социалдык</p>
       <a href="chat.html" data-drawer-target="chatDrawer">💬 <span class="label">ГЛОБАЛ ЧАТ</span></a>
       <a href="rating.html" data-drawer-target="ratingDrawer">⭐ <span class="label">РЕЙТИНГ</span></a>
-      <a href="profile.html">👤 <span class="label">МЕН ПРОФИЛ</span></a>
+      <a class="active" href="profile.html">👤 <span class="label">МЕН ПРОФИЛ</span></a>
     </nav>
     <nav class="sidebar-section">
       <p class="sidebar-title">Система</p>
@@ -57,49 +57,36 @@
 
   <main class="main-content">
     <div class="content-grid">
-      <section class="hero">
-        <div class="badge">Этно стиль • Жаңы муун</div>
-        <h1>Кыргыз маданиятын жаңы муундагы форматта үйрөн.</h1>
-        <p class="helper-text">Тил, оюн, квиз жана видео — баары бир платформада.</p>
-        <div class="hero-actions">
-          <a class="button" href="register.html">Баштоо</a>
-          <a class="button secondary" href="categories/quiz.html">Курс тандоо</a>
+      <section class="card">
+        <div class="profile-header">
+          <div class="avatar-lg"></div>
+          <div>
+            <h2 data-user-name>Чыӊгыз</h2>
+            <p class="helper-text" data-user-username>@username</p>
+            <p class="badge" data-user-xp>XP: 0</p>
+            <div class="hero-actions">
+              <button class="button secondary">Редактировать профиль</button>
+            </div>
+          </div>
         </div>
-      </section>
-
-      <section>
-        <div class="section-title">
-          <h2>Featured</h2>
-          <span class="helper-text">Кыска сунуштар</span>
-        </div>
-        <div class="feature-grid">
-          <article class="card">
-            <div class="card-header"><img src="assets/icons/book.svg" alt=""> <span class="card-title">Кыргыз тили A1</span></div>
-            <p>Жаңы баштагандар үчүн 12 модулдук курс.</p>
-          </article>
-          <article class="card">
-            <div class="card-header"><img src="assets/icons/quiz.svg" alt=""> <span class="card-title">Популярдуу квиз</span></div>
-            <p>Көңүлдүү суроолор менен билимиңизди текшериңиз.</p>
-          </article>
-          <article class="card">
-            <div class="card-header"><img src="assets/icons/movie.svg" alt=""> <span class="card-title">Жаңы видео</span></div>
-            <p>Комуз боюнча жаңы сабак жарыяланды.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="popular-row">
-        <div class="section-title">
-          <h2>Популярдуу</h2>
-          <a class="pill" href="categories/news.html">Баарын көрүү →</a>
-        </div>
-        <div class="carousel" data-source="data/news.json"></div>
       </section>
 
       <section class="card">
-        <h2>Миссия</h2>
-        <p class="quote">"Маданият — эстафета. Heritago аны кийинки муунга этно-цифралык форматта өткөрүп берет."</p>
-        <p class="ai-status helper-text">Жазуу режими активдүү</p>
+        <div class="section-title"><h2>Жетишкендиктер</h2></div>
+        <div class="hero-actions" data-achievements></div>
+      </section>
+
+      <section class="card">
+        <div class="section-title"><h2>Курс прогресси</h2></div>
+        <div class="content-grid" data-progress-list></div>
+      </section>
+
+      <section class="card">
+        <div class="section-title"><h2>Жүктөмөлөр</h2><span class="helper-text">Фото, текст, үн</span></div>
+        <div class="hero-actions">
+          <button class="button">📷 Фото жүктөө</button>
+          <button class="button secondary">📝 Текст кошуу</button>
+        </div>
       </section>
     </div>
   </main>
@@ -109,7 +96,7 @@
     <div class="drawer-body">
       <div class="chat-thread">
         <div class="message-list">
-          <div class="message">Салам! Кандай жаңылык?</div>
+          <div class="message">Салам! Профилиӊди толтурдуӊбу?</div>
         </div>
         <form class="chat-input" data-chat-form>
           <input name="message" placeholder="Жазуу...">
@@ -144,10 +131,10 @@
 
   <script type="module" src="js/utils.js"></script>
   <script type="module" src="js/app.js"></script>
-  <script type="module" src="js/home.js"></script>
   <script type="module" src="js/sidebar.js"></script>
   <script type="module" src="js/topbar.js"></script>
   <script type="module" src="js/chat.js"></script>
   <script type="module" src="js/rating.js"></script>
+  <script type="module" src="js/profile.js"></script>
 </body>
 </html>

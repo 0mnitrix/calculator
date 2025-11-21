@@ -1,12 +1,21 @@
-# Calculator (Heritago UX Prototype Repository)
+# Heritago Frontend Scaffold
 
-This repository now includes a minimal static prototype of the Heritago ethnographic web platform alongside the UX/UI blueprint.
+Бул репозиторий Heritago платформасынын статикалык этно-прототибин камтыйт: бардык негизги беттер, категориялар, AI баракчалары жана бөлүнгөн CSS/JS архитектурасы.
 
-## Files
-- `index.html` — layout skeleton implementing top bar, sidebar, hero, featured cards, drawers, and AI FAB.
-- `styles.css` — ethno-inspired styling tokens, spacing, and responsive rules.
-- `script.js` — lightweight drawer/FAB toggles for chat, rating, and AI modes.
-- `HERITAGO_ARCHITECTURE.md` — full site structure, page templates, design-system snapshot, and delivery checklist.
+## Структура
+- `index.html` — башкы бет: топбар, sidebar, хиро, featured, популярдуу блоктор, чат/рейтинг дроуэрлер.
+- `profile.html`, `chat.html`, `rating.html`, `settings.html`, `login.html`, `register.html` — негизги колдонуучу/системалык беттер.
+- `categories/` — ар бир контенттик категорияга (оюндар, квиздер, кино, санжыра, жер-таануу, энциклопедия, китептер, жаңылыктар, избранное) өз баракча.
+- `ai/` — AI чат барагы (`ai-chat.html`) жана жардамчы скрипттер (`ai.js`, `voice.js`).
+- `css/` — бөлүнгөн стилдер: глобал, layout, компоненттер, sidebar, topbar, home, profile, chat, rating, categories, ai, responsive.
+- `js/` — модулдук логика: негизги `app.js`, sidebar/topbar, chat/rating/Profile/AI формалары, категория гидраторлору.
+- `data/` — демо JSON файлдар (оюндар, квиздер, видеолор, санжыра, жер-таануу, энциклопедия, китептер, жаңылыктар, колдонуучу модели).
+- `assets/` — логотип, иконкалар, placeholder сүрөттөр.
 
-## Usage
-Open `index.html` in a browser to explore the static layout reference. Adjust content, colors, or components per `HERITAGO_ARCHITECTURE.md` when building the production app.
+## Колдонуу
+1. Репоны ачып, ар бир HTML файлды браузерде preview кылсаңыз жетиштүү (build жарабайт).
+2. Динамикалык бөлүктөр `data/*.json` файлдары аркылуу толтурулат; керектүү контентти ошол жактан алмаштырыңыз.
+3. AI FAB жана дроуэрлер бирдиктүү `js/app.js` аркылуу иштетилет; модулдар `type="module"` катары кошулган.
+
+## Эскертүү
+Бул код UI прототип жана маалымат макетин көрсөтөт. Реалдуу бекенд/аутентификация кошуу үчүн ушул структураны негиз катары пайдаланыңыз.

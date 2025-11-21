@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ky">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Жаңылыктар — Heritago</title>
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/sidebar.css">
+  <link rel="stylesheet" href="../css/topbar.css">
+  <link rel="stylesheet" href="../css/categories.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body class="app-shell">
+  <aside class="sidebar">
+    <div class="logo"><img src="../assets/logo/logo.svg" alt="Heritago logo"> HERITAGO</div>
+    <nav class="sidebar-section">
+      <p class="sidebar-title">Контент</p>
+      <a href="games.html">🕹 <span class="label">ОЮНДАР</span></a>
+      <a href="quiz.html">❓ <span class="label">КВИЗДЕР</span></a>
+      <a href="cinema.html">🎬 <span class="label">КИНО</span></a>
+      <a href="sanjira.html">🐺 <span class="label">САНЖЫРА</span></a>
+      <a href="explore.html">🌍 <span class="label">ЖЕР-ТААНУУ</span></a>
+      <a href="encyclopedia.html">📚 <span class="label">ЭНЦИКЛОПЕДИЯ</span></a>
+      <a href="books.html">📖 <span class="label">КИТЕПТЕР</span></a>
+      <a class="active" href="news.html">📰 <span class="label">ЖАҢЫЛЫКТАР</span></a>
+      <a href="favorites.html">❤️ <span class="label">ИЗБРАННОЕ</span></a>
+    </nav>
+    <nav class="sidebar-section">
+      <p class="sidebar-title">Социалдык</p>
+      <a href="../chat.html">💬 <span class="label">ГЛОБАЛ ЧАТ</span></a>
+      <a href="../rating.html">⭐ <span class="label">РЕЙТИНГ</span></a>
+      <a href="../profile.html">👤 <span class="label">МЕН ПРОФИЛ</span></a>
+    </nav>
+    <nav class="sidebar-section">
+      <p class="sidebar-title">Система</p>
+      <a href="../settings.html">⚙️ <span class="label">ОРНОТУУЛАР</span></a>
+      <a href="#">🌐 <span class="label">ТИЛ ТАНДОО</span></a>
+    </nav>
+  </aside>
+
+  <header class="topbar">
+    <button class="button secondary" data-sidebar-toggle aria-label="Open navigation">☰</button>
+    <div class="brand"><img src="../assets/logo/logo.svg" alt="Heritago">Heritago</div>
+    <div class="topbar-actions">
+      <form class="search" data-search-form>
+        <span>🔍</span>
+        <input type="search" name="q" placeholder="Издөө...">
+      </form>
+      <a class="pill" href="../settings.html">⚙️ Настройки</a>
+      <a class="pill" href="../profile.html">👤 Профиль</a>
+      <div class="avatar" aria-hidden="true"></div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="content-grid">
+      <section class="category-hero">
+        <div>
+          <p class="badge">Жаңылыктар</p>
+          <h1>Жаңылыктар</h1>
+          <p class="helper-text" data-category-tagline>Платформанын акыркы жаңыртуулары жана жарыялары.</p>
+        </div>
+        <a class="button" href="../data/news.json">JSON</a>
+      </section>
+      <section class="category-grid" data-category-source="../data/news.json"></section>
+    </div>
+  </main>
+
+  <div class="ai-menu">
+    <button class="button" data-ai-mode="voice">🎤 Сүйлөө</button>
+    <button class="button secondary" data-ai-mode="text">✍️ Жазуу</button>
+  </div>
+  <button class="ai-fab" aria-label="Heritago AI">🤖</button>
+
+  <script type="module" src="../js/utils.js"></script>
+  <script type="module" src="../js/app.js"></script>
+  <script type="module" src="../js/categories.js"></script>
+  <script type="module" src="../js/sidebar.js"></script>
+  <script type="module" src="../js/topbar.js"></script>
+</body>
+</html>

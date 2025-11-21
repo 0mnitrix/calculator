@@ -1,0 +1,20 @@
+.hero h1 {
+  font-size: 28px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+.popular-row {
+  display: grid;
+  gap: 10px;
+}
+
+.quote {
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--muted);
+}
