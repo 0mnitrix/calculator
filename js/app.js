@@ -157,24 +157,30 @@ const openDetailModal = ({ title, description, tags = [] }) => {
 const renderCards = (targetSelector, items = []) => {
   const target = document.querySelector(targetSelector);
   if (!target) return;
-  target.innerHTML = items
-    .map(
-      (item) => `
-      <article class="category-card border-band">
-        <div class="meta">
-          <span class="badge-line">${item.level || item.difficulty || ''}</span>
-          <span class="badge-line">${item.length || ''}</span>
-        </div>
-        <h3>${item.title}</h3>
-        <p>${item.description}</p>
-        <div class="chipset">${(item.tags || [])
-          .map((tag) => `<span class="chip">${tag}</span>`)
-          .join('')}</div>
-        <button class="btn primary" data-open-detail data-title="${item.title}" data-description="${item.description}" data-tags="${(item.tags || []).join('||')}">${item.cta || 'Ачуу'}</button>
-      </article>
-    `,
-    )
-    .join('');
+    target.innerHTML = items
+      .map(
+        (item) => `
+        <article class="category-card border-band">
+          <div class="meta">
+            <span class="badge-line">${item.level || item.difficulty || ''}</span>
+            <span class="badge-line">${item.length || ''}</span>
+          </div>
+          <h3>${item.title}</h3>
+          <p>${item.description}</p>
+          <div class="chipset">${(item.tags || [])
+            .map((tag) => `<span class="chip">${tag}</span>`)
+            .join('')}</div>
+          <button
+            class="btn primary"
+            data-open-detail
+            data-title="${item.title}"
+            data-description="${item.description}"
+            data-tags="${(item.tags || []).join('||')}"
+          >${item.cta || 'Ачуу'}</button>
+        </article>
+      `,
+      )
+      .join('');
 
   target.querySelectorAll('[data-open-detail]').forEach((btn) => {
     btn.addEventListener('click', () => {

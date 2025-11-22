@@ -5,9 +5,9 @@ const loadHomeSections = async () => {
   const carouselEl = document.querySelector('[data-carousel]');
   try {
     const [gamesRes, quizRes, videoRes] = await Promise.all([
-      fetch('./data/games.json'),
-      fetch('./data/quiz.json'),
-      fetch('./data/videos.json'),
+      fetch('/data/games.json'),
+      fetch('/data/quiz.json'),
+      fetch('/data/videos.json'),
     ]);
     const [games, quizzes, videos] = await Promise.all([
       gamesRes.json(),

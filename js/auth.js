@@ -1,5 +1,3 @@
-const forms = document.querySelectorAll('form[data-auth]');
-
 const persistDemoUser = (payload) => {
   const user = {
     name: payload.name || payload.email,
@@ -13,27 +11,34 @@ const persistDemoUser = (payload) => {
   return user;
 };
 
-forms.forEach((form) => {
-  form.addEventListener('submit', (event) => {
-    event.preventDefault();
-    const data = new FormData(form);
-    const payload = Object.fromEntries(data.entries());
-    const status = form.querySelector('[data-auth-status]');
+const attachAuthHandlers = () => {
+  const forms = document.querySelectorAll('form[data-auth]');
+  if (!forms.length) return;
 
-    if (!payload.email || !payload.password) {
-      status ? (status.textContent = 'Email жана пароль толтуруңуз') : alert('Email жана пароль толтуруңуз');
-      return;
-    }
+  forms.forEach((form) => {
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const data = new FormData(form);
+      const payload = Object.fromEntries(data.entries());
+      const status = form.querySelector('[data-auth-status]');
 
-    const user = persistDemoUser(payload);
-    const message = `Кош келиңиз, ${user.name}! (демо аккаунт)`;
-    if (status) {
-      status.textContent = message;
-    } else {
-      alert(message);
-    }
-    setTimeout(() => {
-      window.location.href = '/dashboard.html';
-    }, 500);
+      if (!payload.email || !payload.password) {
+        status ? (status.textContent = 'Email жана пароль толтуруңуз') : alert('Email жана пароль толтуруңуз');
+        return;
+      }
+
+      const user = persistDemoUser(payload);
+      const message = `Кош келиңиз, ${user.name}! (демо аккаунт)`;
+      if (status) {
+        status.textContent = message;
+      } else {
+        alert(message);
+      }
+      setTimeout(() => {
+        window.location.href = '/dashboard.html';
+      }, 500);
+    });
   });
-});
+};
+
+document.addEventListener('DOMContentLoaded', attachAuthHandlers);

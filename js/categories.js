@@ -18,11 +18,15 @@ const loadCategory = async () => {
   if (!page || !target) return;
   const file = mapCategoryToData[page];
   try {
-    const res = await fetch(`../data/${file}`);
+    const res = await fetch(`/data/${file}`);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const items = await res.json();
     renderCards('[data-category-list]', items);
   } catch (err) {
     console.error('Category load failed', err);
+    if (target) {
+      target.innerHTML = '<p class="hint">Категория жүктөлгөн жок. Файлдарды текшериңиз.</p>';
+    }
   }
 };
 
