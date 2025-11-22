@@ -7,6 +7,10 @@
     var(--burialyk-aaryn);
 }
 
+.sidebar-overlay {
+  display: none;
+}
+
 .sidebar {
   position: sticky;
   top: 0;
@@ -359,6 +363,22 @@
     position: fixed;
     left: -260px;
     transition: left 0.25s ease;
+  }
+
+  .sidebar-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 14;
+    display: none;
+  }
+
+  body.sidebar-open .sidebar-overlay {
+    display: block;
+  }
+
+  body.sidebar-open .sidebar {
+    left: 0;
   }
 
   .sidebar.open {

@@ -18,11 +18,44 @@ const activateNav = () => {
 const initSidebarToggle = () => {
   const toggle = document.querySelector('[data-sidebar-toggle]');
   const sidebar = document.querySelector('.sidebar');
-  if (toggle && sidebar) {
+  if (!sidebar) return;
+
+  // overlay for mobile slide-in
+  let overlay = document.querySelector('.sidebar-overlay');
+  if (!overlay) {
+    overlay = document.createElement('div');
+    overlay.className = 'sidebar-overlay';
+    document.body.appendChild(overlay);
+  }
+
+  const closeSidebar = () => {
+    sidebar.classList.remove('open');
+    document.body.classList.remove('sidebar-open');
+  };
+
+  const openSidebar = () => {
+    sidebar.classList.add('open');
+    document.body.classList.add('sidebar-open');
+  };
+
+  if (toggle) {
     toggle.addEventListener('click', () => {
-      sidebar.classList.toggle('open');
+      const isOpen = sidebar.classList.contains('open');
+      if (isOpen) {
+        closeSidebar();
+      } else {
+        openSidebar();
+      }
     });
   }
+
+  overlay.addEventListener('click', closeSidebar);
+
+  sidebar.querySelectorAll('.nav-item').forEach((link) => {
+    link.addEventListener('click', () => {
+      closeSidebar();
+    });
+  });
 };
 
 const initAI = () => {
