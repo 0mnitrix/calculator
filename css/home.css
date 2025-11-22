@@ -1,0 +1,36 @@
+.hero {
+    background: #F4EDE2;
+    border: 2px solid #4B2E22;
+    border-radius: 14px;
+    padding: 24px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    margin: 0 0 10px;
+    color: #2E1C16;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.featured {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 14px;
+    margin: 20px 0;
+}
+
+.popular-row {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+}
+
+.popular-row .card {
+    min-width: 160px;
+    flex-shrink: 0;
+}

@@ -1,0 +1,30 @@
+.sidebar {
+    width: 260px;
+    height: 100vh;
+    background-color: #4B2E22; /* коричневый */
+    color: #F4EDE2; /* молочный */
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 20px;
+}
+
+.sidebar .menu-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #F4EDE2;
+    padding: 12px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.sidebar .menu-item:hover {
+    background-color: #FF7A00; /* ярко-оранжевый */
+}
+
+.logo {
+    width: 120px;
+    margin-bottom: 20px;
+}

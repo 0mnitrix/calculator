@@ -1,0 +1,14 @@
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.search-input {
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 2px solid #4B2E22;
+    background: #F4EDE2;
+    color: #2E1C16;
+}

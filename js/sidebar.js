@@ -1,0 +1,1 @@
+// Sidebar interactions placeholder
