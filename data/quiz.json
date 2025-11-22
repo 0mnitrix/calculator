@@ -1,0 +1,7 @@
+[
+  {"icon":"❓","type":"Quiz","title":"Beginner Quiz","description":"Тилдин негиздерин текшерүү.","level":"Easy"},
+  {"icon":"🎭","type":"Culture","title":"Culture Quiz","description":"Салт-санаа боюнча суроолор.","level":"Medium"},
+  {"icon":"🗺️","type":"Geo","title":"Geography Quiz","description":"Аймактарды таанып билүү.","level":"Medium"},
+  {"icon":"🐺","type":"History","title":"Санжыра факты","description":"Уруулардын тарыхына арналган.","level":"Hard"},
+  {"icon":"🔀","type":"Mix","title":"Аралаш тест","description":"Ар түрдүү темалардан.","level":"Mixed"}
+]

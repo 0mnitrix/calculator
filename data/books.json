@@ -1,0 +1,6 @@
+[
+  {"icon":"🎧","type":"Audio","title":"Манас (аудио)","description":"Эпоско аудио киришме.","format":"Audio"},
+  {"icon":"📄","type":"PDF","title":"Кыргыз тили грамматика","description":"PDF материалдар.","format":"PDF"},
+  {"icon":"📚","type":"Kids","title":"Балдар китептери","description":"Жөнөкөй тилдеги окуялар.","format":"Text"},
+  {"icon":"📝","type":"Short","title":"Кыска тексттер","description":"Кыскача окуулар.","format":"Text"}
+]

@@ -1,0 +1,7 @@
+[
+  {"icon":"📜","type":"History","title":"Тарых","description":"Кыргыз тарыхы боюнча макалалар."},
+  {"icon":"🤝","type":"Society","title":"Коом","description":"Коомдук түзүлүш тууралуу."},
+  {"icon":"🎨","type":"Culture","title":"Маданият","description":"Салт жана маданий феномендер."},
+  {"icon":"📖","type":"Literature","title":"Адабият","description":"Жазуучулар жана чыгармалар."},
+  {"icon":"🖌️","type":"Art","title":"Искусство","description":"Сүрөт, музыка, кол өнөрчүлүк."}
+]

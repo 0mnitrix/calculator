@@ -1,0 +1,7 @@
+[
+  {"icon":"🕹","type":"Game","title":"Vocabulary Game","description":"Тил үйрөнүүчү терминдерди бекемдөө."},
+  {"icon":"🧠","type":"Memory","title":"Memory Cards","description":"Жуптарды табуу аркылуу эстөө."},
+  {"icon":"🧩","type":"Puzzle","title":"Match Pairs","description":"Сөздөрдү жана сүрөттөрдү дал келтирүү."},
+  {"icon":"⚡","type":"Arcade","title":"Speed Reaction","description":"Жылдам реакция талап кылган оюн."},
+  {"icon":"🎧","type":"Audio","title":"Audio Guess","description":"Угуудан сөздү аныкта."}
+]

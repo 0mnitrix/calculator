@@ -1,0 +1,23 @@
+{
+  "name": "Чыңгыз",
+  "username": "chyngyz",
+  "xp": 820,
+  "level": 3,
+  "achievements": [
+    {"icon":"🏆","title":"Баштоочу"},
+    {"icon":"🔥","title":"7 күн streak"},
+    {"icon":"📚","title":"10 китеп"},
+    {"icon":"🎬","title":"5 видео"},
+    {"icon":"🌍","title":"Жер-Таануу lvl 1"}
+  ],
+  "courses": [
+    {"name":"Кыргыз тили А1","progress":72},
+    {"name":"Санжыра","progress":44},
+    {"name":"Энциклопедия","progress":13}
+  ],
+  "uploads": [
+    {"title":"Биом жана тоо сүрөтү","type":"Фото"},
+    {"title":"Дыбыш жазуу","type":"Аудио"},
+    {"title":"Кыска тексттик белги","type":"Текст"}
+  ]
+}
