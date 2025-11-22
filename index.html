@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ky">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heritago</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/topbar.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <div class="sidebar">
+        <img src="assets/logo.png" class="logo">
+
+        <a class="menu-item"><img src="assets/icons/games.png"> Оюндар</a>
+        <a class="menu-item"><img src="assets/icons/quiz.png"> Квиздер</a>
+        <a class="menu-item"><img src="assets/icons/cinema.png"> Кино</a>
+        <a class="menu-item"><img src="assets/icons/sanjira.png"> Санжыра</a>
+        <a class="menu-item"><img src="assets/icons/explore.png"> Жер-Таануу</a>
+        <a class="menu-item"><img src="assets/icons/encyclopedia.png"> Энциклопедия</a>
+        <a class="menu-item"><img src="assets/icons/books.png"> Китептер</a>
+
+        <hr>
+
+        <a class="menu-item"><img src="assets/icons/chat.png"> Глобал Чат</a>
+        <a class="menu-item"><img src="assets/icons/rating.png"> Рейтинг</a>
+        <a class="menu-item"><img src="assets/icons/profile.png"> Мен Профиль</a>
+
+        <hr>
+
+        <a class="menu-item">Орнотуулар</a>
+        <a class="menu-item">Тил тандоо</a>
+    </div>
+
+    <main>
+        <div class="topbar">
+            <h2>Heritago</h2>
+            <input class="search-input" placeholder="Издөө...">
+        </div>
+
+        <section class="hero">
+            <h1>Мурасты сактоо жана билимин кеңейтүү</h1>
+            <p>Тарых, оюндар жана энциклопедия аркылуу жаңы нерселерди изилде.</p>
+            <div class="cta-buttons">
+                <button class="button">Баштоо</button>
+                <button class="button">Изилдөө</button>
+            </div>
+        </section>
+
+        <section class="featured">
+            <div class="card">Тарыхый факттар</div>
+            <div class="card">Интерактивдүү миссиялар</div>
+            <div class="card">Коомдук окуялар</div>
+        </section>
+
+        <section>
+            <h3>Популярдуу</h3>
+            <div class="popular-row">
+                <div class="card">Кыргыз руху</div>
+                <div class="card">Эпос изилдөө</div>
+                <div class="card">Тилдик оюндар</div>
+                <div class="card">Маданият картасы</div>
+            </div>
+        </section>
+    </main>
+
+    <div id="ai-button">🤖</div>
+
+    <div id="ai-menu">
+        <button id="voice-mode">Сүйлөө</button>
+        <button id="text-mode">Жазуу</button>
+    </div>
+
+    <div id="ai-chat-window">
+        <div class="header">Heritago AI</div>
+        <div class="messages"></div>
+        <input type="text" placeholder="Жазыңыз...">
+    </div>
+
+    <script src="js/sidebar.js"></script>
+    <script src="js/ai.js"></script>
+</body>
+</html>
