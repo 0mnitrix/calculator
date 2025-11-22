@@ -146,3 +146,103 @@
   height: 80px;
   background: url('../assets/patterns/heritago_knot.svg') center/contain no-repeat;
 }
+
+.category-card {
+  display: grid;
+  gap: 10px;
+  padding: 16px;
+  border-radius: 16px;
+  background: #fff;
+  border: 1px solid rgba(140, 47, 47, 0.1);
+  box-shadow: var(--shadow-soft);
+}
+
+.category-card .meta {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+  color: var(--muted-text);
+  font-weight: 700;
+}
+
+.badge-line {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 12px;
+  background: rgba(207, 166, 106, 0.2);
+  color: var(--kara-jylga);
+  font-weight: 700;
+}
+
+.leaderboard {
+  display: grid;
+  gap: 10px;
+}
+
+.leaderboard .entry {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 10px;
+  align-items: center;
+  padding: 12px;
+  border-radius: 14px;
+  background: #fff;
+  border: 1px solid rgba(140, 47, 47, 0.08);
+}
+
+.tabs {
+  display: inline-flex;
+  gap: 8px;
+  padding: 6px;
+  background: rgba(239, 232, 224, 0.8);
+  border-radius: 12px;
+}
+
+.tabs button {
+  border: none;
+  background: transparent;
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.tabs button.active {
+  background: #fff;
+  color: var(--kyzyl-terrakot);
+  box-shadow: var(--shadow-soft);
+}
+
+.chipset {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chipset .chip {
+  background: rgba(140, 47, 47, 0.1);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 12px;
+}
+
+.tile-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.tile {
+  background: #fff;
+  border-radius: 14px;
+  padding: 12px;
+  border: 1px solid rgba(140, 47, 47, 0.08);
+  text-align: center;
+  font-weight: 700;
+}

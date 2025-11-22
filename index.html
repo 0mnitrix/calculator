@@ -1,162 +1,160 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Heritago — Этно-платформа</title>
-  <link rel="stylesheet" href="css/global.css" />
-  <link rel="stylesheet" href="css/layout.css" />
-  <link rel="stylesheet" href="css/components.css" />
-  <link rel="stylesheet" href="css/ethno.css" />
-</head>
-<body>
-  <header>
-    <div class="container">
-      <nav>
-        <div class="brand">
-          <img src="assets/logo_heritago.svg" alt="Heritago logo" />
-          <strong>Heritago</strong>
-        </div>
-        <div class="nav-links">
-          <a href="index.html">Главная</a>
-          <a href="courses.html">Курсы</a>
-          <a href="dashboard.html">Кабинет</a>
-          <a href="leaderboard.html">Рейтинг</a>
-          <a href="settings.html">Настройки</a>
-        </div>
-        <div class="nav-actions">
-          <a class="btn secondary" href="login.html">Войти</a>
-          <a class="btn primary" href="signup.html">Регистрация</a>
-        </div>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section class="container hero">
-      <div>
-        <div class="badge">Этно-учебная платформа</div>
-        <h1>Heritago — кыргыз тили, фольклор жана музыка бириккен жерде</h1>
-        <p class="lead">Жандуу уроктор, этно-графика жана узорлор менен толтурулган интерфейс. Культуралык контент, тесттер, лидерборд жана аудио — баары бир платформада.</p>
-        <div class="nav-actions" style="margin-top: 16px;">
-          <a class="btn primary" href="courses.html">Начать курс</a>
-          <a class="btn secondary" href="lesson.html">Посмотреть урок</a>
-        </div>
-      </div>
-      <div class="hero-figure pattern-overlay">
-        <div class="band"></div>
-        <div class="ethno-panel" style="margin-top: 12px;">
-          <div class="content">
-            <div class="badge">Миссия</div>
-            <h3>Сактоо, үйрөнүү, бөлүшүү</h3>
-            <p>Кыргыз оюмдары, кылымдык уламыштар жана жандуу тил — бардык элементтер интерфейсте чагылдырылды.</p>
-            <div class="hero-stats">
-              <div class="stat-card">
-                <small>Студенты</small>
-                <strong>8 200</strong>
-              </div>
-              <div class="stat-card">
-                <small>Уроков</small>
-                <strong>120+</strong>
-              </div>
-              <div class="stat-card">
-                <small>Аудио</small>
-                <strong>65</strong>
-              </div>
-            </div>
+<html lang="ky">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heritago • Этно билим платформасы</title>
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+  </head>
+  <body data-page="home">
+    <div class="app-shell">
+      <aside class="sidebar">
+        <a class="brand" href="/">
+          <img src="/assets/logo_heritago.svg" alt="Heritago" />
+          <div>
+            <strong>Heritago</strong>
+            <div class="label">Этно билим</div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section light">
-      <div class="container">
-        <div class="section-heading"><span></span><h2>Этно-блоки платформы</h2></div>
-        <div class="grid cols-3">
-          <article class="card border-band">
-            <div class="knot"></div>
-            <h3>Интерактивные уроки</h3>
-            <p>Саламдашуу, музыка, фольклор жана сөздүк карталары — ар бир блок кыргыз оюмдары менен.</p>
-          </article>
-          <article class="card border-band">
-            <div class="knot"></div>
-            <h3>Тесты жана викторины</h3>
-            <p>Кыска тесттер этно-узорлор менен. Убакыт чектөөсү жана көрктүү прогресс.</p>
-          </article>
-          <article class="card border-band">
-            <div class="knot"></div>
-            <h3>Лидерборд</h3>
-            <p>Алтын, терракота жана текстиль паттерндери менен оформленный рейтинг.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="container section">
-      <div class="two-column">
-        <div class="main-card pattern-overlay">
-          <div class="badge">Дизайн-философия</div>
-          <h2>Кыргыз оюмдары + заманбап верстка</h2>
-          <p class="lead">Этно-стиль: узорные бордюры, терракот жана алтын градиенты, плавные формы, карточки жана аудио иллюстрации.</p>
-          <div class="ethno-divider"></div>
-          <div class="grid cols-2">
-            <div class="stat-pill">
-              <strong>Шрифт</strong>
-              <span>Nunito / Montserrat</span>
-            </div>
-            <div class="stat-pill">
-              <strong>Палитра</strong>
-              <span>#8C2F2F · #CFA66A · #F0E6D2</span>
-            </div>
-          </div>
-        </div>
-        <aside class="ethno-panel">
-          <div class="content">
-            <h3>Что внутри</h3>
-            <ul class="bordered-list">
-              <li><span>Audio-комуз</span><span class="tag">assets/audio</span></li>
-              <li><span>Иллюстрации</span><span class="tag">assets/illustrations</span></li>
-              <li><span>Узорные SVG</span><span class="tag">assets/patterns</span></li>
-              <li><span>JSON-данные</span><span class="tag">/data</span></li>
+        </a>
+        <nav>
+          <div>
+            <div class="section-title">Контент</div>
+            <ul class="nav-list">
+              <li><a class="nav-item" data-nav="games" href="/categories/games.html"><span class="icon">🕹</span><span class="label">Оюндар</span></a></li>
+              <li><a class="nav-item" data-nav="quiz" href="/categories/quiz.html"><span class="icon">❓</span><span class="label">Квиздер</span></a></li>
+              <li><a class="nav-item" data-nav="cinema" href="/categories/cinema.html"><span class="icon">🎬</span><span class="label">Кино</span></a></li>
+              <li><a class="nav-item" data-nav="sanjira" href="/categories/sanjira.html"><span class="icon">🐺</span><span class="label">Санжыра</span></a></li>
+              <li><a class="nav-item" data-nav="explore" href="/categories/explore.html"><span class="icon">🌍</span><span class="label">Жер-Таануу</span></a></li>
+              <li><a class="nav-item" data-nav="encyclopedia" href="/categories/encyclopedia.html"><span class="icon">📚</span><span class="label">Энциклопедия</span></a></li>
+              <li><a class="nav-item" data-nav="books" href="/categories/books.html"><span class="icon">📖</span><span class="label">Китептер</span></a></li>
+              <li><a class="nav-item" data-nav="news" href="/categories/news.html"><span class="icon">📰</span><span class="label">Жаңылыктар</span></a></li>
+              <li><a class="nav-item" data-nav="favorites" href="/categories/favorites.html"><span class="icon">❤️</span><span class="label">Избранное</span></a></li>
             </ul>
           </div>
-        </aside>
-      </div>
-    </section>
-  </main>
+          <div>
+            <div class="section-title">Социал</div>
+            <ul class="nav-list">
+              <li><a class="nav-item" data-nav="chat" href="/chat.html"><span class="icon">💬</span><span class="label">Глобал чат</span></a></li>
+              <li><a class="nav-item" data-nav="rating" href="/rating.html"><span class="icon">⭐</span><span class="label">Рейтинг</span></a></li>
+              <li><a class="nav-item" data-nav="profile" href="/profile.html"><span class="icon">👤</span><span class="label">Мен профиль</span></a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="section-title">Система</div>
+            <ul class="nav-list">
+              <li><a class="nav-item" data-nav="settings" href="/settings.html"><span class="icon">⚙️</span><span class="label">Орнотуулар</span></a></li>
+              <li><a class="nav-item" data-nav="language" href="/settings.html"><span class="icon">🌐</span><span class="label">Тил</span></a></li>
+            </ul>
+          </div>
+        </nav>
+      </aside>
 
-  <footer>
-    <div class="container footer-grid">
-      <div>
-        <div class="brand">
-          <img src="assets/logo_heritago.svg" alt="Heritago" />
-          <strong style="color:#f0e6d2;">Heritago</strong>
-        </div>
-        <p>Этно-платформа для кыргыз тили, маданият жана искусство.</p>
-      </div>
-      <div>
-        <h4>Платформа</h4>
-        <ul>
-          <li><a href="courses.html">Курсы</a></li>
-          <li><a href="quiz.html">Тесты</a></li>
-          <li><a href="leaderboard.html">Рейтинг</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Профиль</h4>
-        <ul>
-          <li><a href="dashboard.html">Кабинет</a></li>
-          <li><a href="progress.html">Прогресс</a></li>
-          <li><a href="settings.html">Настройки</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Контакты</h4>
-        <p>hello@heritago.kg</p>
-        <p>© <span data-year></span> Heritago</p>
+      <div class="app-main">
+        <header class="topbar">
+          <div class="topbar-inner">
+            <button class="btn secondary" data-sidebar-toggle>☰</button>
+            <div class="search">
+              <span>🔍</span>
+              <input data-search type="search" placeholder="Издөө: курс, квиз, оюн" />
+            </div>
+            <div class="actions">
+              <a class="btn secondary" href="/login.html">Кирүү</a>
+              <a class="btn primary" href="/register.html">Катталуу</a>
+            </div>
+          </div>
+        </header>
+
+        <main class="content-area">
+          <section class="hero border-band">
+            <div>
+              <p class="badge">Этно билим + заманбап UI</p>
+              <h1>Кыргыз маданиятын жаңы муундагы форматта үйрөн.</h1>
+              <p class="lead">Heritago — оюндар, квиздер, видеолор, санжыра жана энциклопедия бириккен платформа.</p>
+              <div class="hero-actions">
+                <a class="btn primary" href="/categories/games.html">Баштоо</a>
+                <a class="btn secondary" href="/categories/quiz.html">Курс тандоо</a>
+              </div>
+              <div class="hero-stats">
+                <div class="stat-card"><strong>120+</strong><span>Сабак</span></div>
+                <div class="stat-card"><strong>50+</strong><span>Оюн</span></div>
+                <div class="stat-card"><strong>24/7</strong><span>AI ассистент</span></div>
+              </div>
+            </div>
+            <div class="hero-visual">
+              <div class="band"></div>
+              <div class="knot"></div>
+              <p>Этно-паттерн жана тил практикасы бир жерде.</p>
+              <div class="band"></div>
+            </div>
+          </section>
+
+          <section class="section-block">
+            <div class="section-heading">
+              <div class="title-row">
+                <div class="accent-line"></div>
+                <h2>Рекомендациялар</h2>
+              </div>
+            </div>
+            <div class="content-grid" data-featured></div>
+          </section>
+
+          <section class="section-block">
+            <div class="section-heading">
+              <div class="title-row">
+                <div class="accent-line"></div>
+                <h2>Популярдуу</h2>
+              </div>
+              <div class="badge">Карточкалар</div>
+            </div>
+            <div class="carousel" data-carousel></div>
+          </section>
+
+          <section class="section-block">
+            <div class="section-heading">
+              <div class="title-row">
+                <div class="accent-line"></div>
+                <h2>Миссия</h2>
+              </div>
+            </div>
+            <blockquote>
+              “Heritago этно-стили менен кыргыз тилин, санжыраны, кино жана оюнду бириктирип, үйрөнүүнү кызыктуу кылат.”
+            </blockquote>
+          </section>
+        </main>
       </div>
     </div>
-  </footer>
-  <script type="module" src="js/app.js"></script>
-</body>
+
+    <div class="ai-floating">
+      <div class="ai-menu">
+        <button data-ai-write>✍️ Жазуу</button>
+        <button onclick="alert('Сүйлөө демо: микрофон иштетилген эмес')">🎤 Сүйлөө</button>
+      </div>
+      <button class="ai-trigger">AI</button>
+    </div>
+
+    <aside class="chat-panel" data-chat-panel>
+      <div class="section-heading">
+        <div class="title-row">
+          <div class="accent-line"></div>
+          <h3>Heritago AI</h3>
+        </div>
+        <button class="btn secondary" data-close-chat>Жабуу</button>
+      </div>
+      <div class="messages" data-chat-messages>
+        <div class="message">
+          <strong>Heritago</strong>
+          <p>Саламатсызбы! Эмне издегиңиз келет?</p>
+        </div>
+      </div>
+      <form>
+        <input type="text" placeholder="Суроону жаз" />
+        <button type="button" class="btn primary">Жөнөтүү</button>
+      </form>
+    </aside>
+
+    <script type="module" src="/js/app.js"></script>
+    <script type="module" src="/js/home.js"></script>
+  </body>
 </html>

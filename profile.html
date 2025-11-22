@@ -1,68 +1,175 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Профиль — Heritago</title>
-  <link rel="stylesheet" href="css/global.css" />
-  <link rel="stylesheet" href="css/layout.css" />
-  <link rel="stylesheet" href="css/components.css" />
-  <link rel="stylesheet" href="css/ethno.css" />
-</head>
-<body>
-  <header>
-    <div class="container">
-      <nav>
-        <div class="brand">
-          <img src="assets/logo_heritago.svg" alt="Heritago logo" />
-          <strong>Heritago</strong>
-        </div>
-        <div class="nav-links">
-          <a href="index.html">Главная</a>
-          <a href="dashboard.html">Кабинет</a>
-          <a href="profile.html">Профиль</a>
-        </div>
-        <div class="nav-actions">
-          <a class="btn secondary" href="settings.html">Настройки</a>
-        </div>
-      </nav>
-    </div>
-  </header>
-
-  <main class="container section">
-    <div class="section-heading"><span></span><h2>Профиль</h2></div>
-    <div class="two-column">
-      <div class="main-card pattern-overlay">
-        <div class="lesson-hero">
-          <div class="avatar">AI</div>
+<html lang="ky">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heritago • Профиль</title>
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/components.css" />
+    <link rel="stylesheet" href="/css/layout.css" />
+  </head>
+  <body data-page="profile">
+    <div class="app-shell">
+      <aside class="sidebar">
+        <a class="brand" href="/">
+          <img src="/assets/logo_heritago.svg" alt="Heritago" />
           <div>
-            <h3>Aizada Ismailova</h3>
-            <p class="lead">Этно-энтузиаст, сүйүүчү кыргыз оюмдары жана комуз күүлөрү.</p>
+            <strong>Heritago</strong>
+            <div class="label">Этно билим</div>
           </div>
-        </div>
-        <div class="ethno-divider"></div>
-        <div class="lesson-meta">
-          <span class="chip">Алтын тил</span>
-          <span class="chip">Манас таануу</span>
-          <span class="chip">Комуз үнү</span>
-        </div>
-      </div>
-      <aside class="ethno-panel">
-        <div class="content">
-          <h3>Настройки профиля</h3>
-          <form>
-            <label for="lang">Язык интерфейса</label>
-            <select id="lang">
-              <option>Кыргызча</option>
-              <option>Русский</option>
-              <option>English</option>
-            </select>
-            <button class="btn primary" type="button">Сохранить</button>
-          </form>
-        </div>
+        </a>
+        <nav>
+          <div>
+            <div class="section-title">Контент</div>
+            <ul class="nav-list">
+              <li><a class="nav-item" data-nav="games" href="/categories/games.html"><span class="icon">🕹</span><span class="label">Оюндар</span></a></li>
+              <li><a class="nav-item" data-nav="quiz" href="/categories/quiz.html"><span class="icon">❓</span><span class="label">Квиздер</span></a></li>
+              <li><a class="nav-item" data-nav="cinema" href="/categories/cinema.html"><span class="icon">🎬</span><span class="label">Кино</span></a></li>
+              <li><a class="nav-item" data-nav="sanjira" href="/categories/sanjira.html"><span class="icon">🐺</span><span class="label">Санжыра</span></a></li>
+              <li><a class="nav-item" data-nav="explore" href="/categories/explore.html"><span class="icon">🌍</span><span class="label">Жер-Таануу</span></a></li>
+              <li><a class="nav-item" data-nav="encyclopedia" href="/categories/encyclopedia.html"><span class="icon">📚</span><span class="label">Энциклопедия</span></a></li>
+              <li><a class="nav-item" data-nav="books" href="/categories/books.html"><span class="icon">📖</span><span class="label">Китептер</span></a></li>
+              <li><a class="nav-item" data-nav="news" href="/categories/news.html"><span class="icon">📰</span><span class="label">Жаңылыктар</span></a></li>
+              <li><a class="nav-item" data-nav="favorites" href="/categories/favorites.html"><span class="icon">❤️</span><span class="label">Избранное</span></a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="section-title">Социал</div>
+            <ul class="nav-list">
+              <li><a class="nav-item" data-nav="chat" href="/chat.html"><span class="icon">💬</span><span class="label">Глобал чат</span></a></li>
+              <li><a class="nav-item" data-nav="rating" href="/rating.html"><span class="icon">⭐</span><span class="label">Рейтинг</span></a></li>
+              <li><a class="nav-item" data-nav="profile" href="/profile.html"><span class="icon">👤</span><span class="label">Мен профиль</span></a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="section-title">Система</div>
+            <ul class="nav-list">
+              <li><a class="nav-item" data-nav="settings" href="/settings.html"><span class="icon">⚙️</span><span class="label">Орнотуулар</span></a></li>
+              <li><a class="nav-item" data-nav="language" href="/settings.html"><span class="icon">🌐</span><span class="label">Тил</span></a></li>
+            </ul>
+          </div>
+        </nav>
       </aside>
+
+      <div class="app-main">
+        <header class="topbar">
+          <div class="topbar-inner">
+            <button class="btn secondary" data-sidebar-toggle>☰</button>
+            <div class="search">
+              <span>🔍</span>
+              <input data-search type="search" placeholder="Профиль боюнча издөө" />
+            </div>
+            <div class="actions">
+              <a class="btn secondary" href="/settings.html">Орнотуулар</a>
+            </div>
+          </div>
+        </header>
+
+        <main class="content-area">
+          <div class="page-header">
+            <h1>Мен профиль</h1>
+            <div class="badge">Этно ID</div>
+          </div>
+
+          <section class="section-block">
+            <div class="section-heading">
+              <div class="title-row"><div class="accent-line"></div><h2>Жеке маалымат</h2></div>
+            </div>
+            <div class="two-column">
+              <div class="card">
+                <div class="inline-list">
+                  <div class="avatar">AT</div>
+                  <div>
+                    <h3 data-user-name>Айсулуу</h3>
+                    <p data-user-handle>@aisuluu</p>
+                    <p data-user-level>Level 6 • 1200 XP</p>
+                  </div>
+                </div>
+                <div class="chipset" data-achievements></div>
+              </div>
+              <div class="card">
+                <div class="badge-line">Streak</div>
+                <h2 data-user-streak>7 күн</h2>
+                <p>Күн сайын үйрөнүү режимин сактаңыз.</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="section-block">
+            <div class="section-heading">
+              <div class="title-row"><div class="accent-line"></div><h2>Курс прогресс</h2></div>
+            </div>
+            <div class="content-grid" data-courses></div>
+          </section>
+
+          <section class="section-block">
+            <div class="section-heading">
+              <div class="title-row"><div class="accent-line"></div><h2>Жүктөмөлөр</h2></div>
+              <div class="badge">Галерея</div>
+            </div>
+            <div class="tile-grid">
+              <div class="tile">Фото</div>
+              <div class="tile">Текст</div>
+              <div class="tile">Добуш жазуу</div>
+              <div class="tile">Видео</div>
+            </div>
+          </section>
+
+          <section class="section-block">
+            <div class="section-heading">
+              <div class="title-row"><div class="accent-line"></div><h2>Орнотуулар</h2></div>
+            </div>
+            <div class="form-grid">
+              <div class="card">
+                <label>Ысым</label>
+                <input type="text" value="Айсулуу" />
+              </div>
+              <div class="card">
+                <label>Email</label>
+                <input type="email" value="aisuluu@example.com" />
+              </div>
+              <div class="card">
+                <label>Жыл</label>
+                <input type="number" value="1997" />
+              </div>
+              <div class="card">
+                <label>Жайгашуу</label>
+                <input type="text" value="Бишкек" />
+              </div>
+              <div class="card">
+                <label>Жыныс</label>
+                <select>
+                  <option>Аял</option>
+                  <option>Эркек</option>
+                </select>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
     </div>
-  </main>
-  <script type="module" src="js/app.js"></script>
-</body>
+
+    <div class="ai-floating">
+      <div class="ai-menu">
+        <button data-ai-write>✍️ Жазуу</button>
+        <button onclick="alert('Сүйлөө демо: микрофон иштетилген эмес')">🎤 Сүйлөө</button>
+      </div>
+      <button class="ai-trigger">AI</button>
+    </div>
+
+    <aside class="chat-panel" data-chat-panel>
+      <div class="section-heading">
+        <div class="title-row"><div class="accent-line"></div><h3>Heritago AI</h3></div>
+        <button class="btn secondary" data-close-chat>Жабуу</button>
+      </div>
+      <div class="messages" data-chat-messages></div>
+      <form>
+        <input type="text" placeholder="Суроону жаз" />
+        <button type="button" class="btn primary">Жөнөтүү</button>
+      </form>
+    </aside>
+
+    <script type="module" src="/js/app.js"></script>
+    <script type="module" src="/js/profile.js"></script>
+  </body>
 </html>
