@@ -1,0 +1,248 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 18px;
+  border-radius: 14px;
+  border: 1px solid transparent;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  cursor: pointer;
+}
+
+.btn.primary {
+  background: linear-gradient(120deg, var(--kyzyl-terrakot), #a84545);
+  color: #fff;
+  box-shadow: var(--shadow-soft);
+}
+
+.btn.primary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-strong);
+}
+
+.btn.secondary {
+  background: #fff;
+  color: var(--kara-jylga);
+  border-color: rgba(75, 46, 34, 0.12);
+}
+
+.btn.secondary:hover {
+  border-color: rgba(140, 47, 47, 0.4);
+}
+
+.card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: var(--shadow-soft);
+  border: 1px solid rgba(140, 47, 47, 0.08);
+}
+
+.card.headered {
+  padding: 0;
+  overflow: hidden;
+}
+
+.card header {
+  padding: 14px 16px;
+  border-bottom: 1px solid #f0e4d8;
+  background: rgba(140, 47, 47, 0.08);
+}
+
+.card .content {
+  padding: 16px;
+}
+
+.border-band {
+  border: 2px solid rgba(75, 46, 34, 0.18);
+  border-image: url('../assets/patterns/heritago_band.svg') 8 repeat;
+  border-image-slice: 30 fill;
+  border-radius: 20px;
+}
+
+.chip {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  padding: 8px 12px;
+  background: rgba(207, 166, 106, 0.2);
+  color: var(--kara-jylga);
+  border-radius: 14px;
+  font-weight: 700;
+}
+
+.progress {
+  width: 100%;
+  height: 14px;
+  background: #f3e8dc;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress .bar {
+  height: 100%;
+  background: linear-gradient(90deg, var(--kyzyl-terrakot), var(--altyn));
+}
+
+.timeline {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-left: 3px solid rgba(140, 47, 47, 0.24);
+}
+
+.timeline li {
+  position: relative;
+  padding: 12px 0 12px 18px;
+}
+
+.timeline li::before {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--kyzyl-terrakot);
+  left: -8px;
+  top: 18px;
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 3px rgba(140, 47, 47, 0.18);
+}
+
+.alert {
+  border-radius: 16px;
+  padding: 14px 16px;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  background: rgba(140, 47, 47, 0.08);
+  border: 1px solid rgba(140, 47, 47, 0.14);
+}
+
+.avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #e5d5bf, #cfa66a);
+  display: grid;
+  place-items: center;
+  color: var(--kara-jylga);
+  font-weight: 800;
+}
+
+.stat-pill {
+  background: rgba(140, 47, 47, 0.08);
+  padding: 10px 12px;
+  border-radius: 12px;
+  display: grid;
+  gap: 4px;
+}
+
+.knot {
+  width: 80px;
+  height: 80px;
+  background: url('../assets/patterns/heritago_knot.svg') center/contain no-repeat;
+}
+
+.category-card {
+  display: grid;
+  gap: 10px;
+  padding: 16px;
+  border-radius: 16px;
+  background: #fff;
+  border: 1px solid rgba(140, 47, 47, 0.1);
+  box-shadow: var(--shadow-soft);
+}
+
+.category-card .meta {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+  color: var(--muted-text);
+  font-weight: 700;
+}
+
+.badge-line {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 12px;
+  background: rgba(207, 166, 106, 0.2);
+  color: var(--kara-jylga);
+  font-weight: 700;
+}
+
+.leaderboard {
+  display: grid;
+  gap: 10px;
+}
+
+.leaderboard .entry {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 10px;
+  align-items: center;
+  padding: 12px;
+  border-radius: 14px;
+  background: #fff;
+  border: 1px solid rgba(140, 47, 47, 0.08);
+}
+
+.tabs {
+  display: inline-flex;
+  gap: 8px;
+  padding: 6px;
+  background: rgba(239, 232, 224, 0.8);
+  border-radius: 12px;
+}
+
+.tabs button {
+  border: none;
+  background: transparent;
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.tabs button.active {
+  background: #fff;
+  color: var(--kyzyl-terrakot);
+  box-shadow: var(--shadow-soft);
+}
+
+.chipset {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chipset .chip {
+  background: rgba(140, 47, 47, 0.1);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 12px;
+}
+
+.tile-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.tile {
+  background: #fff;
+  border-radius: 14px;
+  padding: 12px;
+  border: 1px solid rgba(140, 47, 47, 0.08);
+  text-align: center;
+  font-weight: 700;
+}

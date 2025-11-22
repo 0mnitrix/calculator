@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Montserrat:wght@600;700&display=swap');
+
+:root {
+  --kyzyl-terrakot: #8c2f2f;
+  --altyn: #cfa66a;
+  --kun-kumush: #f0e6d2;
+  --kara-jylga: #4b2e22;
+  --burialyk-aaryn: #efe8e0;
+  --deep-earth: #2f1c16;
+
+  --text-color: #2b211a;
+  --muted-text: #6b5247;
+
+  --radius: 16px;
+  --shadow-soft: 0 8px 24px rgba(43, 33, 26, 0.15);
+  --shadow-strong: 0 14px 42px rgba(43, 33, 26, 0.28);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Nunito', 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: var(--text-color);
+  background: radial-gradient(circle at 20% 20%, rgba(207, 166, 106, 0.16), transparent 35%),
+    radial-gradient(circle at 80% 0%, rgba(140, 47, 47, 0.12), transparent 25%),
+    var(--burialyk-aaryn);
+  min-height: 100vh;
+}
+
+a {
+  color: var(--kyzyl-terrakot);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #a84545;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Montserrat', 'Nunito', sans-serif;
+  color: var(--kara-jylga);
+  margin: 0 0 0.35em 0;
+}
+
+p {
+  line-height: 1.6;
+  margin: 0 0 1em 0;
+  color: var(--text-color);
+}
+
+.container {
+  width: min(1200px, 92vw);
+  margin: 0 auto;
+}
+
+.section {
+  padding: 72px 0;
+}
+
+.section.light {
+  background: linear-gradient(145deg, #f8f1e8 0%, #efe4d6 100%);
+}
+
+.section .section-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 36px;
+}
+
+.section .section-heading span {
+  display: inline-flex;
+  width: 48px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--kyzyl-terrakot), var(--altyn));
+  border-radius: 999px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(207, 166, 106, 0.16);
+  color: var(--kara-jylga);
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.grid {
+  display: grid;
+  gap: 24px;
+}
+
+.grid.cols-3 {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.grid.cols-2 {
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.lead {
+  font-size: 1.2rem;
+  color: var(--muted-text);
+}
+
+blockquote {
+  border-left: 4px solid var(--kyzyl-terrakot);
+  padding-left: 16px;
+  color: var(--muted-text);
+  font-style: italic;
+}
+
+footer {
+  background: var(--deep-earth);
+  color: #f9f4ed;
+  padding: 48px 0;
+  margin-top: 64px;
+}
+
+footer a {
+  color: #f0e6d2;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+.nav-links a.active {
+  color: var(--altyn);
+}
+
+.pattern-overlay {
+  position: relative;
+}
+
+.pattern-overlay::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('../assets/patterns/heritago_band.svg');
+  background-size: 480px auto;
+  background-repeat: repeat;
+  opacity: 0.08;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.pattern-overlay > * {
+  position: relative;
+  z-index: 1;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+}
+
+.table th, .table td {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid #f0e4d8;
+}
+
+.table th {
+  background: rgba(140, 47, 47, 0.08);
+  color: var(--kara-jylga);
+  font-weight: 700;
+}
+
+.table tr:last-child td {
+  border-bottom: none;
+}
+
+.tag {
+  display: inline-flex;
+  padding: 6px 10px;
+  background: rgba(140, 47, 47, 0.08);
+  color: var(--kyzyl-terrakot);
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 12px;
+}

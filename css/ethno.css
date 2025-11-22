@@ -1,0 +1,86 @@
+.ethno-panel {
+  position: relative;
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  border: 1px solid rgba(140, 47, 47, 0.1);
+}
+
+.ethno-panel::before,
+.ethno-panel::after {
+  content: "";
+  position: absolute;
+  height: 12px;
+  left: 0;
+  right: 0;
+  background-image: url('../assets/patterns/heritago_band.svg');
+  background-size: 420px auto;
+  background-repeat: repeat-x;
+}
+
+.ethno-panel::before { top: 0; }
+.ethno-panel::after { bottom: 0; transform: scaleY(-1); }
+
+.ethno-panel .content {
+  padding: 22px 20px;
+}
+
+.ethno-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, rgba(207, 166, 106, 0.28), transparent 55%),
+    radial-gradient(circle at 70% 60%, rgba(140, 47, 47, 0.18), transparent 60%),
+    #fff;
+  border: 2px solid rgba(140, 47, 47, 0.22);
+  display: grid;
+  place-items: center;
+}
+
+.pattern-block {
+  background-image: url('../assets/patterns/heritago_textile.svg');
+  background-size: 640px auto;
+  background-repeat: repeat;
+  border-radius: 18px;
+  border: 1px solid rgba(75, 46, 34, 0.12);
+}
+
+.ribbon {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  background: linear-gradient(120deg, rgba(140, 47, 47, 0.12), rgba(207, 166, 106, 0.16));
+  border-radius: 999px;
+  border: 1px solid rgba(207, 166, 106, 0.4);
+  font-weight: 800;
+}
+
+.bordered-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.bordered-list li {
+  padding: 12px 14px;
+  border: 1px solid rgba(140, 47, 47, 0.12);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.9);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.ethno-divider {
+  height: 12px;
+  background-image: url('../assets/patterns/heritago_band.svg');
+  background-size: 320px auto;
+  background-repeat: repeat-x;
+  opacity: 0.6;
+  margin: 28px 0;
+}

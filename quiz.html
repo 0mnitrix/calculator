@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Тест — Heritago</title>
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/ethno.css" />
+  <link rel="stylesheet" href="css/quiz.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand">
+          <img src="assets/logo_heritago.svg" alt="Heritago logo" />
+          <strong>Heritago</strong>
+        </div>
+        <div class="nav-links">
+          <a href="index.html">Главная</a>
+          <a href="courses.html">Курсы</a>
+          <a href="quiz.html">Тесты</a>
+          <a href="leaderboard.html">Рейтинг</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container section">
+    <div class="section-heading"><span></span><h2 id="quiz-title">Тест</h2></div>
+    <div id="quiz-questions" class="grid cols-2"></div>
+    <div class="result-card" style="margin-top: 24px;">
+      <strong>Подсказка:</strong>
+      <p>Этно-узорный бордюр мотивирует: отвечайте уверенно, кыргыз тили сиз менен!</p>
+    </div>
+  </main>
+  <script type="module" src="js/app.js"></script>
+  <script type="module" src="js/quiz.js"></script>
+</body>
+</html>
