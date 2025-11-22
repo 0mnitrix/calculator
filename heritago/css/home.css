@@ -1,0 +1,29 @@
+.main {
+    margin-left: 300px;
+    padding: 40px;
+    background: #F4EDE2; /* молочный */
+    min-height: 100vh;
+}
+
+.primary {
+    background: #FF7A00;
+    padding: 12px 25px;
+    border-radius: 12px;
+    border: none;
+    color: white;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.card {
+    background: white;
+    padding: 20px 30px;
+    border: 2px solid #4B2E22;
+    border-radius: 12px;
+}
