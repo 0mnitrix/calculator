@@ -1,0 +1,33 @@
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 260px;
+    height: 100vh;
+    background: #4B2E22; /* коричневый */
+    padding: 25px 20px;
+    color: #F4EDE2;
+}
+
+.sidebar a {
+    display: block;
+    padding: 12px 10px;
+    margin-bottom: 6px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 10px;
+    text-decoration: none;
+    color: #F4EDE2;
+    font-size: 18px;
+}
+
+.sidebar a:hover {
+    background: #FF7A00; /* оранжевый */
+    color: white;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background: #F4EDE2;
+    margin: 12px 0;
+}
