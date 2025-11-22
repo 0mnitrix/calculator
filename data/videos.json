@@ -1,0 +1,6 @@
+[
+  {"icon":"🎬","type":"Video","title":"Мультфильм: Манас","description":"Балдар үчүн адаптация."},
+  {"icon":"🎥","type":"Documentary","title":"Документалдык видеолор","description":"Тарыхый тасмалар."},
+  {"icon":"🎞️","type":"Short","title":"Кыска видео","description":"Shorts форматындагы роликтер."},
+  {"icon":"📚","type":"Learning","title":"Окуу видеолору","description":"Сабак үчүн видеоматериалдар."}
+]

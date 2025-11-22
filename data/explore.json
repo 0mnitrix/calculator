@@ -1,0 +1,6 @@
+[
+  {"icon":"🏔️","type":"Region","title":"Облустар","description":"Ар бир облустун өзгөчөлүгү."},
+  {"icon":"🧭","type":"Travel","title":"Туристтик жайлар","description":"Барууга татыктуу жерлер."},
+  {"icon":"🌿","type":"Nature","title":"Кыргызстандын жаратылышы","description":"Флора жана фауна."},
+  {"icon":"🖼️","type":"Gallery","title":"Фото/Видео коллекция","description":"Мультимедиа материалдары."}
+]
