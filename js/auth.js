@@ -5,7 +5,11 @@ const persistDemoUser = (payload) => {
     name: payload.name || payload.email,
     email: payload.email,
   };
-  localStorage.setItem('heritagoUser', JSON.stringify(user));
+  try {
+    localStorage.setItem('heritagoUser', JSON.stringify(user));
+  } catch (err) {
+    console.warn('Unable to persist demo user', err);
+  }
   return user;
 };
 
