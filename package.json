@@ -1,0 +1,11 @@
+{
+  "name": "online-clicker-race",
+  "version": "1.0.0",
+  "description": "Real-time multiplayer clicker race game using WebSockets.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {}
+}
