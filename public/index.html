@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Clicker Race</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="branding">
+        <div class="emoji">🎮</div>
+        <div>
+          <h1>Online Clicker Race</h1>
+          <p>Click as fast as you can before the timer hits zero!</p>
+        </div>
+      </div>
+      <div class="timer" id="timer">--</div>
+    </header>
+
+    <main>
+      <section class="card">
+        <div class="you">
+          <p class="label">You are</p>
+          <h2 id="player-name">Connecting...</h2>
+          <p class="score">Score: <span id="player-score">0</span></p>
+        </div>
+        <button id="click-btn" class="primary" disabled>Click!</button>
+        <button id="restart-btn" class="secondary" disabled>Start new round</button>
+        <p class="status" id="status">Waiting for server...</p>
+      </section>
+
+      <section class="card scoreboard">
+        <div class="scoreboard-header">
+          <h3>Leaderboard</h3>
+          <span class="badge" id="round-status">—</span>
+        </div>
+        <ul id="players"></ul>
+      </section>
+    </main>
+
+    <div id="toast" class="toast hidden"></div>
+
+    <script src="client.js"></script>
+  </body>
+</html>
