@@ -1,6 +1,6 @@
 const express = require('express');
 const http = require('http');
-const { WebSocketServer } = require('ws');
+const { WebSocketServer, WebSocket } = require('ws');
 const { randomUUID } = require('crypto');
 
 const app = express();
@@ -32,7 +32,7 @@ function generateName() {
 function broadcast(data) {
   const message = JSON.stringify(data);
   for (const player of players.values()) {
-    if (player.ws.readyState === player.ws.OPEN) {
+    if (player.ws.readyState === WebSocket.OPEN) {
       player.ws.send(message);
     }
   }
