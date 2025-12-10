@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ky">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Сабактар үчүн меню</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <button class="hamburger" aria-label="Менюну ачуу" aria-expanded="false" aria-controls="side-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div class="brand">Онлайн окуу</div>
+  </header>
+
+  <aside id="side-menu" class="side-menu" aria-hidden="true">
+    <div class="menu-header">
+      <h2>Меню</h2>
+      <button class="close-btn" aria-label="Менюну жабуу">×</button>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#lessons">Сабактар</a></li>
+        <li><a href="#leadership">Лидершиф</a></li>
+        <li><a href="#practice">Практика</a></li>
+        <li><a href="#community">Жамаат</a></li>
+      </ul>
+    </nav>
+    <div class="menu-footer">
+      <a href="#account">Аккаунт</a>
+      <a href="#settings">Настройка</a>
+      <a href="#support">Колдоо</a>
+      <a href="#logout">Чыгуу</a>
+    </div>
+  </aside>
+
+  <main class="content">
+    <section id="lessons">
+      <h1>Сабактар</h1>
+      <p>Бул жерде сабактардын тизмеси же маалымат жайгашат.</p>
+    </section>
+    <section id="leadership">
+      <h2>Лидершиф</h2>
+      <p>Лидерлик боюнча материалдарга менюдан өтүңүз.</p>
+    </section>
+    <section id="practice">
+      <h2>Практика</h2>
+      <p>Практикалык тапшырмалардын бөлүмү.</p>
+    </section>
+    <section id="community">
+      <h2>Жамаат</h2>
+      <p>Катышуучулар менен байланыш жана талкуулар.</p>
+    </section>
+  </main>
+
+  <div class="backdrop" hidden></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
