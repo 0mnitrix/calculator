@@ -1,0 +1,17 @@
+{
+  "name": "web-learning-hub",
+  "version": "1.0.0",
+  "description": "A simple learning portal for web fundamentals with rewards.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --check server.js"
+  },
+  "keywords": ["learning", "web", "html", "css", "javascript"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2",
+    "sqlite3": "^5.1.7"
+  }
+}

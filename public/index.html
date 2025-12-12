@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Learning Hub</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero__text">
+        <p class="eyebrow">HTML · CSS · JavaScript · Internet · API</p>
+        <h1>Learn how the web works, one topic at a time.</h1>
+        <p class="lede">
+          Explore bite-sized explanations and practical checklists. Complete a topic to
+          earn a reward and build confidence with the technologies behind every website.
+        </p>
+        <div class="hero__actions">
+          <a class="btn primary" href="#topics">Start learning</a>
+          <button class="btn ghost" id="refresh-topics">Refresh topics</button>
+        </div>
+      </div>
+      <div class="hero__card" aria-hidden="true">
+        <p class="pill">Progress at a glance</p>
+        <p class="hero__score" id="hero-score">0 / 5 topics</p>
+        <p class="small">Rewards appear here when you mark a topic as done.</p>
+        <div class="reward" id="hero-reward">No rewards yet — pick a topic!</div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section" id="progress">
+        <div class="section__header">
+          <div>
+            <p class="eyebrow">Your roadmap</p>
+            <h2>Fundamentals that build solid web skills</h2>
+            <p class="lede">
+              Each card includes quick definitions, what to practice, and a checklist. When
+              you finish a topic, you get a reward badge stored in the database.
+            </p>
+          </div>
+          <div class="progress__stats">
+            <div>
+              <p class="stat__label">Completed</p>
+              <p class="stat__value" id="completed-count">0</p>
+            </div>
+            <div>
+              <p class="stat__label">Total Topics</p>
+              <p class="stat__value" id="total-count">0</p>
+            </div>
+            <div>
+              <p class="stat__label">Latest reward</p>
+              <p class="stat__value" id="latest-reward">–</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="topics">
+        <div class="section__header">
+          <div>
+            <p class="eyebrow">Learning path</p>
+            <h2>Start with the basics, then build something small</h2>
+          </div>
+          <div class="tip">
+            <p class="tip__title">Quick tip</p>
+            <p class="small">
+              Read the checklist, open your editor, and try each bullet. Small wins keep you
+              motivated!
+            </p>
+          </div>
+        </div>
+        <div id="topic-list" class="topic-grid" role="list">
+          <!-- Cards rendered by app.js -->
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <p class="eyebrow">Stay curious</p>
+        <p class="small">
+          This mini app stores your progress in a local SQLite database and serves content
+          with a lightweight Express API. Restarting the server keeps your progress intact.
+        </p>
+      </div>
+      <div class="footer__links">
+        <a href="#topics">Topics</a>
+        <a href="#progress">Progress</a>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
